@@ -1,0 +1,4 @@
+images/**
+access.log
+error.log
+configuration.php

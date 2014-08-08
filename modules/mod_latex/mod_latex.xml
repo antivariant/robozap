@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+        <!-- Названия модуля -->
+        <name>mod_latex</name>
+        <!-- Следующие элементы являются не обязательными,
+            информация об авторе, копирайте и т.п. -->
+        <creationDate>March 2013</creationDate>
+        <author>Igor Gromov</author>
+        <authorEmail>antivariant@mail.ru</authorEmail>
+        <authorUrl>http://gromsoft.com</authorUrl>
+        <copyright>GSoft</copyright>
+        <license>License Info</license>
+        <!--  Версия модуля запишется в БД таблица extension -->
+        <version>0.0.1</version>
+        <!-- Описание, не обязательно, по умолчанию использеуется имя модуля -->
+        <description>Latex use div with lang=latex</description>
+  
+        <!-- Обратите внимание на атрибут module, он указывает из
+                 какой директории будут копироваться файлы  -->
+        <files>
+                <filename module="mod_latex">mod_latex.php</filename>
+                <filename>mod_latex.xml</filename>
+                <filename>index.html</filename>
+		<filename>latexit.js</filename>
+        </files>
+</extension>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content">
+	<name>plg_content_codehighlighter</name>
+	<author>John</author>
+	<creationDate>Jan.28 2011</creationDate>
+	<copyright>Copyright (C) 2011 http://www.codeis.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>guomuyi0521@gmail.com</authorEmail>
+	<authorUrl>www.codeis.com</authorUrl>
+	<version>1.4</version>
+	<description>PLG_CONTENT_CODEHIGHLIGHTER_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="codehighlighter">codehighlighter.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>	
+		<folder>syntaxhighlighter2</folder>
+		<folder>syntaxhighlighter3</folder>	
+	</files>
+	<languages folder="language">	
+		<language tag="en-GB">en-GB/en-GB.plg_content_codehighlighter.ini</language>		
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			   <field name="version" type="list"	default="3"	description="SYNTAXHIGHLIGHTER_VERSION_DESCRIPTION"	label="SYNTAXHIGHLIGHTER_VERSION_LABEL">
+				   <option value="2">2.x</option>
+				   <option value="3">3.x</option>
+				</field>
+				 <field name="theme" type="list"	default="Default"	description="THEME_DESCRIPTION"	label="THEME_LABEL">
+				   <option value="Default">Default</option>
+				   <option value="Eclipse">Eclipse</option>
+				   <option value="Emacs">Emacs</option>
+				   <option value="FadeToGrey">FadeToGrey</option>
+				   <option value="MDUltra">MDUltra</option>
+				   <option value="Midnight">Midnight</option>
+				   <option value="RDark">RDark</option>
+				</field>
+		   </fieldset>	
+			<fieldset name="codehighlighter">
+				<field name="AppleScript" type="list"	default="0"	description="APPLESCRIPT_DESCRIPTION"	label="AppleScript">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>
+				<field name="AS3" type="list"	default="0"	description="ACTIONSCRIPT3_DESCRIPTION"	label="ActionScript3">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>
+				<field name="Bash" type="list"	default="0"	description="BASH_DESCRIPTION"	label="Bash">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>
+				<field name="ColdFush" type="list"	default="0"	description="COLDFUSH_DESCRIPTION"	label="ColdFush">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>
+				<field name="Cpp" type="list"	default="1"	description="CPP_DESCRIPTION"	label="C++">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>
+				 <field name="CSharp" type="list"	default="1"	description="CSHARP_DESCRIPTION"	label="C#">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>
+				<field name="Css" type="list"	default="1"	description="CSS_DESCRIPTION"	label="CSS">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>
+				 
+				<field name="Delphi" type="list"	default="0"	description="DELPHI_DESCRIPTION"	label="Delphi">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>
+				
+				<field name="Diff" type="list"	default="0"	description="DIFF_DESCRIPTION"	label="Diff">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>   
+				<field name="Erlang" type="list"	default="0"	description="ERLANG_DESCRIPTION"	label="Erlang">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>  
+				
+				<field name="Groovy" type="list"	default="0"	description="GROOVY_DESCRIPTION"	label="Groovy">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field> 
+				
+				<field name="Java" type="list"	default="1"	description="JAVA_DESCRIPTION"	label="Java">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field> 
+				
+				<field name="JavaFX" type="list"	default="0"	description="JAVAFX_DESCRIPTION"	label="JavaFX">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field> 
+				<field name="JScript" type="list"	default="1"	description="JSCRIPT_DESCRIPTION"	label="JScript">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field> 
+				<field name="Perl" type="list"	default="0"	description="PERL_DESCRIPTION"	label="Perl">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field> 
+				<field name="Php" type="list"	default="1"	description="PHP_DESCRIPTION"	label="Php">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>    
+				<field name="Plain" type="list"	default="1"	description="PLAIN_DESCRIPTION"	label="Plain">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>    
+				<field name="PowerShell" type="list"	default="0"	description="POWERSHELL_DESCRIPTION"	label="PowerShell">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>    
+				 <field name="Python" type="list"	default="0"	description="PYTHON_DESCRIPTION"	label="Python">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>  
+				<field name="Ruby" type="list"	default="0"	description="RUBY_DESCRIPTION"	label="Ruby">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field> 
+				<field name="Sass" type="list"	default="0"	description="SASS_DESCRIPTION"	label="Sass">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>   
+				<field name="Scala" type="list"	default="0"	description="SCALA_DESCRIPTION"	label="Scala">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>        
+				<field name="Sql" type="list"	default="0"	description="SQL_DESCRIPTION"	label="SQL">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field>        
+				 <field name="Vb" type="list"	default="0"	description="VB_DESCRIPTION"	label="VB">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field> 
+				       
+				 <field name="Xml" type="list"	default="1"	description="XML_DESCRIPTION"	label="XML">
+				   <option value="1">Yes</option>
+				   <option value="0">No</option>
+				</field> 
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+  <name>plg_content_ext_tss</name>
+  <author>ELLE</author>
+  <creationDate>20.08.2013</creationDate>
+  <copyright>20.08.2013 All rights reserved.</copyright>
+  <license>GNU/GPL v.3 or later.</license>
+  <authorEmail>seoelle@gmail.com</authorEmail>
+  <authorUrl>joomext.ru</authorUrl>
+  <version>1.0</version>
+  <description>PLG_EXT_TSS_XML_DESCRIPTION</description>
+  <files>
+    <filename plugin="ext_tss">ext_tss.php</filename>
+    <filename>index.html</filename>
+  </files>
+   <media destination="ext_tss" folder="media">
+        <filename>index.html</filename>
+        <folder>assets</folder>
+    </media>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.plg_content_ext_tss.ini</language>
+    <language tag="en-GB">en-GB/en-GB.plg_content_ext_tss.sys.ini</language>
+    <language tag="ru-RU">ru-RU/ru-RU.plg_content_ext_tss.ini</language>
+    <language tag="ru-RU">ru-RU/ru-RU.plg_content_ext_tss.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+          <field name="tabs" type="radio" default="1" label="PLG_EXT_TSS_TABS" description="" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+          </field>
+		  <field name="sliders" type="radio" default="1" label="PLG_EXT_TSS_SLIDERS" description="" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+          </field>
+		  <field name="spoilers" type="radio" default="1" label="PLG_EXT_TSS_SPOILERS" description="" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+          </field>
+          <field name="jquery" type="text" default="" label="PLG_EXT_TSS_JQUERY" description="PLG_EXT_TSS_JQUERY_DESC" size="30" />                                            
+      </fieldset>
+    </fields>
+  </config>
+</extension>

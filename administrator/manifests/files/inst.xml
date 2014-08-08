@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="1.6" type="file" client="site" method="upgrade">
+	<name>Russian</name>
+	<tag>ru-RU</tag>
+	<packagename>Article Randomness</packagename>
+	<version>1.0</version>
+	<creationdate>2012.09.22</creationdate>
+	<author>Роман Алехин</author>
+	<authoremail>ouhce2009@gmail.com</authoremail>
+	<authorurl>http://joomlatranslations.ru</authorurl>
+	<copyright>(C)joomlatranslations.ru</copyright>
+	<license>GNU/GPL</license>
+	<description>Модернизация голосового поиска для модуля search </description>
+	<fileset>
+		<files folder="" target="\modules\mod_search\tmpl">
+			<filename>default.php</filename>
+		</files>
+		<files folder="" target="\language\ru-RU">
+			<filename>ru-RU.mod_search.ini</filename>
+			<filename>ru-RU.mod_search.sys.ini</filename>
+		</files>
+	</fileset>
+</extension>

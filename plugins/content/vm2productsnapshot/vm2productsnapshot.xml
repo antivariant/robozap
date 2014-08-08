@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content" method="upgrade">
+	<name>VM2 Product Snapshot For Virtuemart</name>
+	<author>Fiona Coulter</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Fiona Coulter - Inspiration Web Design</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>joomla-at-iswebdesign.co.uk</authorEmail>
+	<authorUrl>www.spiralscripts.co.uk</authorUrl>
+	<version>1.1.0</version>
+	<description>Content plugin to embed Virtuemart 2 products into Joomla articles</description>
+    <languages>
+        <language tag="en-GB">en-GB.plg_vm2productsnapshot.ini</language>
+    </languages>		
+	<files>
+		<filename plugin="vm2productsnapshot">vm2productsnapshot.php</filename>
+		<folder>vm2productsnapshot</folder>
+	</files>
+	<config>
+	<fields name="params">
+	  <fieldset name="basic" label="Basic Options" description="" >	
+		  <field name="showAddToCart" type="list" default="1"
+			  label="Show Add to Cart Button?"
+			  description="Defines whether the add to cart button is displayed or not.">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		  </field>
+		  <field name="showProductLink" type="list" default="1"
+			  label="Show Product Link?"
+			  description="Defines whether a link to the Virtuemart product page is displayed or not.">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		  </field>		  
+		  <field name="showPrice" type="list" default="1"
+			  label="Show Product Price?"
+			  description="Defines whether the product price is displayed or not.">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		  </field>
+		  <field name="showImage" type="list" default="1"
+			  label="Show Product Image?"
+			  description="Defines whether the product image is displayed or not.">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		  </field>
+		  <field name="showName" type="list" default="1"
+			  label="Show Product Name?"
+			  description="Defines whether the product name is displayed or not.">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		  </field>	
+		  <field name="showCaption" type="list" default="0"
+			  label="Show Short Caption?"
+			  description="Show short caption taken from product short description">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		  </field>	
+		  <field name="showSDescription" type="list" default="1"
+			  label="Show Short Description?"
+			  description="Defines whether the product short description displayed or not.">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		  </field>	
+		  <field name="showDescription" type="list" default="0"
+			  label="Show Description?"
+			  description="Defines whether the product full description is displayed or not.">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		  </field>
+		  <field name="showStock" type="list" default="1"
+			  label="Show Items in Stock?"
+			  description="Defines whether the product stock levels are displayed.">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		  </field>		
+		  <field name="showSKU" type="list" default="1"
+			  label="Show Product SKU?"
+			  description="Defines whether the product SKU is displayed.">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		  </field>			  			  
+		  <field name="addtocart" type="text" default="Add to Cart" label="Button Text" description="text to display on add to cart button" />	
+		  <field name="linktext" type="text" default="Product Details" label="Product Link Text" description="text to display on the link to Virtuemart product page." />	
+		  <field name="captionLength" type="text" default="0" label="Caption Length" description="Number of characters to display from description." />	
+		  <field name="loadStylesheet" type="list" default="1"
+			  label="Load Stylesheet"
+			  description="Should the plugin styleshheet be loaded. This is recommended, but if you wish to minimise the files that your page loads, you can set this to no and put the styling rules in your template css instead.">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		  </field>		  
+	  </fieldset>
+	</fields>	
+	
+	</config>
+	
+</extension>

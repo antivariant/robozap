@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+img.snapshotImage{margin:4px;float:left;}
+
+#main div.vmproductSnapshot a{background-color:transparent;}
+
+a.snapshotProductLink{padding:4px;margin:4px;}
+
+/*div.vmproductSnapshot div.addtocart-button{
+    width: 152px;
+    background: url("../../../../../components/com_virtuemart/assets/images/vmgeneral/backgrounds.png") repeat-x scroll 0px -160px rgb(232, 232, 232);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 160, 0);
+    border-radius: 4px 4px 4px 4px;
+    font-size: 14px;
+    cursor: pointer;
+    height: 34px;
+	line-height:26px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 4px 5px;
+	text-decoration:none;
+	margin:4px;
+}
+
+div.vmproductSnapshot div.addtocart-button a{
+	text-decoration:none;
+}
+*/
+div.vmproductSnapshot{
+	padding:4px;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 4px 4px 4px 4px;
+	
+	
+}
+
+span.snapshotPrice{font-weight:bold; font-size:1.2em; }
+
+
+

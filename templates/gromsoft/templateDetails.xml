@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="template">
+        <name>Gromsoft</name>
+        <creationDate>2013-05-30</creationDate>
+        <author>Igor Gromov</author>
+        <authorEmail>antivariant@mail.ru</authorEmail>
+        <authorUrl>http://www.gromsoft.com</authorUrl>
+        <copyright>Gromsoft 2013</copyright>
+        <license>GNU/GPL</license>
+        <version>1.0.2</version>
+        <description>Template for Robozap.ru</description>
+        <files>
+                <filename>index.php</filename>
+                <filename>templateDetails.xml</filename>
+                <folder>images</folder>
+                <folder>css</folder>
+        </files>
+        <positions>
+                <position>top</position>
+                <position>login</position>
+                <position>breadcrumb</position>
+                <position>left</position>
+                <position>right</position>
+                <position>user1</position>
+                <position>user2</position>
+                <position>user3</position>
+                <position>user4</position>
+                <position>footer</position>
+                <position>mainbody_top</position>
+                <position>banner1</position>
+                <position>bottom</position>
+                <position>bottom2</position>
+                <position>bottom4</position>
+                <position>cart</position>
+                <position>footer_nav</position>
+                <position>header</position>
+                <position>mainbody_bottom</position>
+                <position>position-4</position>
+                <position>position-7</position>
+                <position>search</position>
+                <position>topmenu</position>
+                <position>user9</position>
+        </positions>
+
+        <languages folder="language">
+                <language tag="ru-RU">ru-RU.tpl_gromsoft.ini</language>
+        </languages>
+
+        <config>
+               <fields name="params">
+                      <fieldset name="advanced">
+                            <field name="logo" type="media"
+                               label="TPL_GS_LOGO_LBL"           
+                               description="TPL_GS_LOG_DSCR" />
+         
+                            <field name="sitetitle" type="text" default=""
+                                   label="Заголовок"
+                                   description="Текст в шапке"
+                                   filter="string" />
+         
+
+                      </fieldset>
+               </fields>
+        </config>
+ 
+
+        
+</extension>
