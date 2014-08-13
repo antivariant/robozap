@@ -4,3 +4,4 @@ error.log
 configuration.php
 log/**
 logs/**
+tests/_output/*

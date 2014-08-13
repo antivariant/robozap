@@ -9,14 +9,14 @@ modules:
     enabled:
         - PhpBrowser
         - AcceptanceHelper
+        - Db
     config:
         PhpBrowser:
             url: 'http://robozap.local'
         Db:
-            dsn: 'mysql:host=localhost; dbname=robozap;'
-            user: 'robozap'
+            dsn: 'mysql:host=localhost; dbname=robozap;charset=utf8;'
+            user: 'root'
             password: 'masterkey'
             dump: 'tests/_data/dump.sql'
-            cleanup: true
-            populate: true
-
+            cleanup: false
+            populate: false
