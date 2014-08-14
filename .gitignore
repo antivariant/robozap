@@ -4,11 +4,12 @@ error.log
 configuration.php
 log/**
 logs/**
-tests/_output/*
-codeception.yml
-tests/_data/**
 administrator/components/com_akeeba/backup/*.jpe
 media/k2/attachments/*.zip
 media/k2/attachments/*.pdf
 media/k2/attachments/*.djvu
+codeception.yml
 tests/*.yml
+tests/_output/*
+tests/_data/dump.sql
+tests/_bootstrap.php
