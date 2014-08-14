@@ -12,4 +12,4 @@ $I->fillField(['id'=>'password'],'masterkey');
 $I->fillField(['id'=>'password2'],'masterkey');
 $I->attachFile(['id'=>'image'], 'user.png');
 $I->click('Зарегистрироваться');
-$I->seeInDatabase('robo_users', array('name'=>'Codeception test','username'=>'ctest1','email'=>'design@robozap.ru'));
+$I->seeInDatabase('robo_users', array('name'=>'Codeception test','username'=>'ctest','email'=>'design@robozap.ru'));
