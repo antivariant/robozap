@@ -1,0 +1,1 @@
+mysqldump --host=82.118.21.78 --user="robozap" --password="masterkey" robozap>dump.sql

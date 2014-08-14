@@ -13,3 +13,4 @@ tests/*.yml
 tests/_output/*
 tests/_data/dump.sql
 tests/_bootstrap.php
+tests/_data/import-dump.cmd 
