@@ -6,4 +6,4 @@ $I->click('Форум');
 $I->fillField(['name'=>'username'],'antivariant');
 $I->fillField(['name'=>'password'],'masterkey');
 $I->click('Войти');
-$I->see('Добро пожаловать','li');
+$I->see('Добро пожаловать','ll');
