@@ -1,6 +1,6 @@
 <?php 
 $I = new AcceptanceTester($scenario);
-$I->wantTo('залогиниться и выйти');
+$I->wantTo('залогиниться и выйти c главной');
 //Вход
 $I->amOnPage('/');
 $I->click('Войти');
