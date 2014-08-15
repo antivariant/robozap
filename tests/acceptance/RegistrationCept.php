@@ -1,6 +1,6 @@
 <?php 
 $I = new AcceptanceTester($scenario);
-$I->wantTo('зарегистрироваться');
+$I->wantTo('залогиниться');
 $I->amOnPage('/');
 $I->click('Войти');
 $I->click('Регистрация');

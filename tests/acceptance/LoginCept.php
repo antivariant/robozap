@@ -5,8 +5,8 @@ $I->wantTo('залогиниться и выйти');
 $I->amOnPage('/');
 $I->click('Войти');
 $I->see('РЕГИСТРАЦИЯ И ВХОД');
-$I->fillField(['name'=>'username'],'antivariant');
-$I->fillField(['name'=>'password'],'trustno1no2');
+$I->fillField(['name'=>'username'], Admin::$username);
+$I->fillField(['name'=>'password'], Admin::$password);
 $I->click('#login-form input[type=submit]');
 $I->see('Выйти');
 //Выход
