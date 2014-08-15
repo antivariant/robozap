@@ -10,7 +10,10 @@ media/k2/attachments/*.pdf
 media/k2/attachments/*.djvu
 codeception.yml
 tests/*.yml
-tests/_output/*
+tests/_output/**
 tests/_data/dump.sql
 tests/_bootstrap.php
 tests/_data/import-dump.cmd
+generatedJUnitFiles/**
+temporary-junit-reports/**
+cache/**
