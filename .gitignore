@@ -17,3 +17,4 @@ tests/_data/import-dump.cmd
 generatedJUnitFiles/**
 temporary-junit-reports/**
 cache/**
+kickstart.php
