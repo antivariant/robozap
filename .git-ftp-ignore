@@ -1,0 +1,16 @@
+tests/.*
+codeception.yml
+images/.*
+access.log
+error.log
+configuration.php
+log/.*
+logs/.*
+generatedJUnitFiles/.*
+temporary-junit-reports/.*
+kickstart.php
+ru-RU.kickstart.ini
+en-GB.kickstart.ini
+cache/.*
+
+
