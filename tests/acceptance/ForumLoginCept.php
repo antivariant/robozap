@@ -1,6 +1,6 @@
 <?php 
 $I = new AcceptanceTester($scenario);
-$I->wantTo('залогиниться в форум на странце форума');
+$I->wantTo('залогиниться в форум со страницы форума');
 $I->amOnPage('/');
 $I->click('Форум');
 $I->fillField(['name'=>'username'],'antivariant');
