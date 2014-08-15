@@ -1,3 +1,3 @@
 <?php
-echo "Sorry, временно offline";
+echo "Скоро";
 ?>
