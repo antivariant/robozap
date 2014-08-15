@@ -18,3 +18,4 @@ generatedJUnitFiles/**
 temporary-junit-reports/**
 cache/**
 kickstart.php
+administrator/components/com_akeeba/backup/**
