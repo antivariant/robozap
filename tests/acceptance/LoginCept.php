@@ -12,4 +12,4 @@ $I->see('Выйти');
 //Выход
 $I->click('Выйти');
 $I->click('#login-form input[type=submit]');
-$I->see('Войти');
+$I->see('Войти!');
