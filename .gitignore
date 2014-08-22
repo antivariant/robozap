@@ -19,3 +19,5 @@ temporary-junit-reports/**
 cache/**
 kickstart.php
 administrator/components/com_akeeba/backup/**
+en-GB.kickstart.ini
+ru-RU.kickstart.ini
