@@ -31,7 +31,7 @@ class NSP_GK5_Thumbs {
 		stories.demo.jpg
 		(in this situation mirror of ./images/ directory isn't necessary)
 	*/
-	function translateName($name,$mod_id, $k2_mode = false, $vm_mode = false, $image_type = '', $downloaded = false, $filename = null) {
+	static function translateName($name,$mod_id, $k2_mode = false, $vm_mode = false, $image_type = '', $downloaded = false, $filename = null) {
 		// check the mode
 		if($downloaded || stripos($name, 'http://') !== FALSE || stripos($name, 'https://') !== FALSE) {
 			if($downloaded) {
@@ -86,7 +86,7 @@ class NSP_GK5_Thumbs {
 		return $name;
 	}*/
 	// function to change file path to  real path.
-	function getRealPath($path, $k2_mode = false, $vm_mode = false) {
+	static function getRealPath($path, $k2_mode = false, $vm_mode = false) {
 		$start = ($k2_mode || $vm_mode) ? (($k2_mode) ? strpos($path, 'media/') : strpos($path, 'components/')) : strpos($path, 'images/');
 		$path = './'.substr($path, $start);
 		
@@ -97,7 +97,7 @@ class NSP_GK5_Thumbs {
 		this function checks if file exists in cache directory
 		and checks if time of file life isn't too long
 	*/
-	function checkCache($filename, $cache_time) {
+	static function checkCache($filename, $cache_time) {
 		if($cache_time === FALSE) {
 			$cache_time = 100 * 365 * 24 * 60 * 60;
 		}
@@ -114,7 +114,7 @@ class NSP_GK5_Thumbs {
             1 - when _cropped image exists
             2 - when _noscale image exists
     */
-    function checkSpecialImages($path) {
+    static function checkSpecialImages($path) {
         $cache_dir = JPATH_ROOT.DS.'modules'.DS.'mod_news_pro_gk5'.DS.'cache'.DS;
         // generate the names
         $ext = substr($path, -4);
@@ -132,7 +132,7 @@ class NSP_GK5_Thumbs {
         }
     }
 	// Creating thumbnails
-	function createThumbnail($path, $config, $k2_mode = false, $vm_mode = false, $img_rel = '') {
+	static function createThumbnail($path, $config, $k2_mode = false, $vm_mode = false, $img_rel = '') {
 		if($config['use_curl_download'] == 0 && (stripos($path, 'http://') || stripos($path, 'https://'))) {
 			return false;
 		}
