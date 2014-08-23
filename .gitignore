@@ -21,3 +21,4 @@ kickstart.php
 administrator/components/com_akeeba/backup/**
 en-GB.kickstart.ini
 ru-RU.kickstart.ini
+info.php
